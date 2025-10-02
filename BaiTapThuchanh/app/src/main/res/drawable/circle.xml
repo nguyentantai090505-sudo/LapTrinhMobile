@@ -1,4 +1,5 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="oval">
-    <solid android:color="@android:color/transparent" />
+    <solid android:color="@android:color/white" /> <!-- nền trắng để outline nhận diện -->
+    <stroke android:width="2dp" android:color="@android:color/black"/> <!-- viền (tùy chọn) -->
 </shape>
