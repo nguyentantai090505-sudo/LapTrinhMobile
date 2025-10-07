@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Ô nhập số -->
+    <EditText
+        android:id="@+id/edtNumber"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Nhập vào số lượng"
+        android:inputType="text"
+        android:background="@drawable/edittext"
+        android:padding="10dp"
+        android:textSize="16sp" />
+
+
+    <!-- Nút tạo -->
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Tạo"
+        android:backgroundTint="@android:color/holo_blue_light"/>
+
+    <!-- Thông báo lỗi -->
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_dark"
+        android:visibility="gone"
+        android:layout_marginTop="8dp"
+        android:text="Dữ liệu bạn nhập không hợp lệ" />
+
+    <!-- Layout chứa danh sách nút -->
+    <LinearLayout
+        android:id="@+id/layoutButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical" />
+
+</LinearLayout>
